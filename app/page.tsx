@@ -314,17 +314,17 @@ export default function LeadMagnetFunnel() {
                     />
 
                     <div className="grid grid-cols-2 gap-6">
-                      <div className="bg-white p-6 rounded-2xl shadow-lg border border-red-100 text-center">
-                        <div className="text-3xl font-bold text-red-600 mb-2">Before</div>
-                        <div className="text-slate-600 space-y-1">
+                      <div className="bg-gradient-to-br from-red-400 to-red-600 p-6 rounded-2xl shadow-lg border border-red-100 text-center">
+                        <div className="text-3xl font-bold mb-2 text-primary-foreground">Before</div>
+                        <div className="space-y-1 text-primary-foreground">
                           <div className="font-semibold">20+ hours/week</div>
                           <div className="text-sm">Stressed & overwhelmed</div>
                           <div className="text-sm">Clients avoiding calls</div>
                         </div>
                       </div>
-                      <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-6 rounded-2xl shadow-lg text-center text-white">
+                      <div className="bg-gradient-to-br from-emerald-400 to-green-500 p-6 rounded-2xl shadow-lg text-center text-white">
                         <div className="text-3xl font-bold mb-2">After</div>
-                        <div className="space-y-1">
+                        <div className="space-y-1 text-primary-foreground">
                           <div className="font-semibold">2 hours/week</div>
                           <div className="text-sm text-blue-100">Focused on growth</div>
                           <div className="text-sm text-blue-100">Happy clients</div>
@@ -756,7 +756,7 @@ export default function LeadMagnetFunnel() {
         return (
           <div className="space-y-8">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl font-bold text-slate-900">What's your biggest payment follow-up challenge?</h2>
+              <h2 className="text-3xl font-bold text-slate-900">Do you think AI Agents could help your agency?             </h2>
               <p className="text-slate-600">Help us understand your specific pain points so we can address them</p>
             </div>
 
@@ -766,7 +766,7 @@ export default function LeadMagnetFunnel() {
               </Label>
               <Textarea
                 id="challenge"
-                placeholder="For example: 'I spend too much time calling clients who don't answer, it's hard to stay consistent with follow-ups, clients get annoyed with my calls, I lose track of who to follow up with when...'"
+                placeholder="For example: 'I am interested in implementing AI Agents into my agency to help with client notifications'"
                 value={formData.biggestChallenge}
                 onChange={(e) => updateFormData("biggestChallenge", e.target.value)}
                 className="min-h-[150px] text-base border-slate-200 focus:border-blue-300 focus:ring-blue-200 bg-white"

@@ -133,7 +133,7 @@ export default function AboutPage() {
         <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-16 px-8 rounded-3xl border border-blue-100">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">My Journey to Automation</h2>
+              <h2 className="text-4xl font-bold text-slate-900 mb-4">My Experience </h2>
               <p className="text-xl text-slate-600">From frontline service to automation expertise</p>
             </div>
 
@@ -303,36 +303,70 @@ export default function AboutPage() {
               <div className="space-y-8">
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
                   <h3 className="text-xl font-bold text-green-300 mb-4">Professional Experience</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-white">Revit Designer - Belimed</div>
-                        <div className="text-slate-300 text-sm">
-                          Healthcare equipment production drawings (2024-2025)
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-white">Architectural Revit Technician - HH Architecture</div>
-                        <div className="text-slate-300 text-sm">
-                          3D visualization and project coordination (2022-2023)
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-white">Management - MGS Auto Sales</div>
-                        <div className="text-slate-300 text-sm">Data analysis and marketing strategy (2019-2020)</div>
-                      </div>
-                    </div>
-                  </div>
+                  <div className="space-y-8">
+  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
+    <h3 className="text-xl font-bold text-green-300 mb-4">Professional Experience</h3>
+    <div className="space-y-4">
+
+      <div className="flex items-start space-x-3">
+        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+        <div>
+          <div className="font-semibold text-white">Structural Designer - Master Consulting Engineers, Inc.</div>
+          <div className="text-slate-300 text-sm">
+            Collaborated with engineers and architects to document structural systems for commercial, residential, and institutional buildings (Jun 2025 - Aug 2025)
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-start space-x-3">
+        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+        <div>
+          <div className="font-semibold text-white">Designer - Belimed</div>
+          <div className="text-slate-300 text-sm">
+            Created production and installation drawings for healthcare equipment, coordinating with engineers and project managers (Dec 2024 - May 2025)
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-start space-x-3">
+        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+        <div>
+          <div className="font-semibold text-white">Architectural Revit Technician - HH Architecture</div>
+          <div className="text-slate-300 text-sm">
+            Assisted with drawing coordination and production across all design and construction phases (Jul 2022 - Feb 2023)
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-start space-x-3">
+        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+        <div>
+          <div className="font-semibold text-white">Management - MGS Auto Sales</div>
+          <div className="text-slate-300 text-sm">
+            Developed datasets and reports for inventory, maintained website, and implemented marketing strategies for small businesses (Feb 2019 - Jul 2020)
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-start space-x-3">
+        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+        <div>
+          <div className="font-semibold text-white">Management - Latino Servi-Tax Corp</div>
+          <div className="text-slate-300 text-sm">
+            Filed personal and commercial taxes, assisted clients with payments and insurance, and designed company logo (Sep 2014 - Present)
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="mt-6 text-center">
+  </div>
+</div>
+
                 </div>
 
-                <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-6 rounded-2xl border border-blue-400/30">
+                <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-6 rounded-2xl border border-blue-400/30 my-6">
                   <h3 className="text-xl font-bold text-white mb-3">Why This Combination Works</h3>
                   <p className="text-blue-100 leading-relaxed">
                     My technical background gives me the skills to build sophisticated automation systems, while my
@@ -503,14 +537,32 @@ export default function AboutPage() {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
-                  <Phone className="h-8 w-8 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900">Phone</h3>
-                  <p className="text-slate-600">(919) 985-4451</p>
-                </div>
-              </div>
+  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+    {/* LinkedIn SVG Icon */}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-8 w-8 text-white"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.268h-3v-4.5c0-1.072-.928-2-2-2s-2 .928-2 2v4.5h-3v-9h3v1.268c.557-.798 1.551-1.268 2.5-1.268 2.206 0 4 1.794 4 4v5z"/>
+    </svg>
+  </div>
+  <div>
+    <h3 className="font-semibold text-slate-900">LinkedIn</h3>
+    <p className="text-slate-600">
+      <a
+        href="https://www.linkedin.com/in/elviscueva/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline hover:text-green-500"
+      >
+        linkedin.com/in/elviscueva
+      </a>
+    </p>
+  </div>
+</div>
+
 
               <div className="text-center space-y-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
