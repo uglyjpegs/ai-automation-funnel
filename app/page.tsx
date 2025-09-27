@@ -314,15 +314,15 @@ export default function LeadMagnetFunnel() {
                     />
 
                     <div className="grid grid-cols-2 gap-6">
-                      <div className="bg-white p-6 rounded-2xl shadow-lg border border-red-100 text-center">
-                        <div className="text-3xl font-bold text-red-600 mb-2">Before</div>
-                        <div className="text-slate-600 space-y-1">
+                      <div className="bg-gradient-to-br from-red-400 to-red-600 p-6 rounded-2xl shadow-lg text-white text-center">
+                        <div className="text-3xl font-bold mb-2 text-primary-foreground">Before</div>
+                        <div className="space-y-1 text-primary-foreground">
                           <div className="font-semibold">20+ hours/week</div>
                           <div className="text-sm">Stressed & overwhelmed</div>
                           <div className="text-sm">Clients avoiding calls</div>
                         </div>
                       </div>
-                      <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-6 rounded-2xl shadow-lg text-center text-white">
+                      <div className="bg-gradient-to-br from-emerald-400 to-green-500 p-6 rounded-2xl shadow-lg text-center text-white">
                         <div className="text-3xl font-bold mb-2">After</div>
                         <div className="space-y-1">
                           <div className="font-semibold">2 hours/week</div>
