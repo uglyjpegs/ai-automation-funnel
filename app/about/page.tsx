@@ -50,12 +50,12 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 relative">
+              <div className="w-50 h-50 relative">
                 <Image
-                  src="/images/remedy-ai-logo.png"
+                  src="/images/Grey.png"
                   alt="Remedy AI Logo"
-                  width={48}
-                  height={48}
+                  width={200}
+                  height={200}
                   className="object-contain"
                 />
               </div>
@@ -67,7 +67,7 @@ export default function AboutPage() {
                 className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
               >
                 <Home className="h-4 w-4" />
-                <span>Home</span>
+                <span>Back to Home</span>
               </Button>
             </div>
           </div>
@@ -108,18 +108,23 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-
-              <div className="space-y-6">
-                <div className="w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto shadow-2xl">
-                  <Users className="h-32 w-32 text-white" />
+                <div className="space-y-6">
+                  <div className="w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto shadow-2xl overflow-hidden">
+                    <Image
+                      src="/images/squarepp2.png"
+                      alt="Profile"
+                      width={320}   // matches w-80 (80 * 4 = 320px)
+                      height={320}  // matches h-80
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <p className="text-blue-200 font-medium">
+                      "I've been on both sides – serving clients and building solutions. That's what makes the
+                      difference."
+                    </p>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <p className="text-blue-200 font-medium">
-                    "I've been on both sides - serving clients and building solutions. That's what makes the
-                    difference."
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>

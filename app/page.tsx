@@ -155,7 +155,7 @@ export default function LeadMagnetFunnel() {
       className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
     >
       <User className="h-4 w-4" />
-      <span>About Elvis</span>
+      <span>About Us</span>
     </Button>
   )
 
@@ -164,14 +164,14 @@ export default function LeadMagnetFunnel() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 relative">
-              <Image
-                src="/images/remedy-ai-logo.png"
-                alt="Remedy AI Logo"
-                width={48}
-                height={48}
-                className="object-contain"
-              />
+            <div className="w-75 h-75 relative">
+                <Image
+                  src="/images/Grey.png"
+                  alt="Remedy AI Logo"
+                  width={200}
+                  height={200}
+                  className="object-contain"
+                />
             </div>
           </div>
           <div className="flex items-center space-x-6">
@@ -314,15 +314,15 @@ export default function LeadMagnetFunnel() {
                     />
 
                     <div className="grid grid-cols-2 gap-6">
-                      <div className="bg-gradient-to-br from-red-400 to-red-600 p-6 rounded-2xl shadow-lg text-white text-center">
-                        <div className="text-3xl font-bold mb-2 text-primary-foreground">Before</div>
-                        <div className="space-y-1 text-primary-foreground">
+                      <div className="bg-white p-6 rounded-2xl shadow-lg border border-red-100 text-center">
+                        <div className="text-3xl font-bold text-red-600 mb-2">Before</div>
+                        <div className="text-slate-600 space-y-1">
                           <div className="font-semibold">20+ hours/week</div>
                           <div className="text-sm">Stressed & overwhelmed</div>
                           <div className="text-sm">Clients avoiding calls</div>
                         </div>
                       </div>
-                      <div className="bg-gradient-to-br from-emerald-400 to-green-500 p-6 rounded-2xl shadow-lg text-center text-white">
+                      <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-6 rounded-2xl shadow-lg text-center text-white">
                         <div className="text-3xl font-bold mb-2">After</div>
                         <div className="space-y-1">
                           <div className="font-semibold">2 hours/week</div>
