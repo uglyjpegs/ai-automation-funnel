@@ -164,7 +164,7 @@ export default function LeadMagnetFunnel() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 md:w-12 md:h-12 relative">
+            <div className="w-12 h-12 relative">
               <Image
                 src="/images/remedy-ai-logo.png"
                 alt="Remedy AI Logo"
@@ -174,16 +174,16 @@ export default function LeadMagnetFunnel() {
               />
             </div>
           </div>
-          <div className="flex items-center space-x-4 md:space-x-6">
+          <div className="flex items-center space-x-6">
             <AboutDialog />
             {currentStep !== 0 && (
               <Button
                 variant="ghost"
                 onClick={goHome}
-                className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors px-3 py-2"
+                className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
               >
                 <Home className="h-4 w-4" />
-                <span className="hidden sm:inline">Back to Home</span>
+                <span>Back to Home</span>
               </Button>
             )}
           </div>
@@ -198,10 +198,10 @@ export default function LeadMagnetFunnel() {
         return (
           <div className="space-y-16">
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white py-12 md:py-20 px-6 rounded-3xl shadow-2xl">
+            <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white py-20 px-6 rounded-3xl shadow-2xl">
               <div className="max-w-5xl mx-auto text-center space-y-8">
                 <div className="space-y-6">
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                  <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                     Stop Chasing
                     <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                       Overdue Payments
@@ -227,15 +227,15 @@ export default function LeadMagnetFunnel() {
             </section>
 
             {/* Benefits Section */}
-            <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-12 md:py-16 px-6 rounded-3xl border border-blue-100">
+            <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-16 px-6 rounded-3xl border border-blue-100">
               <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-12">
                   <h2 className="text-4xl font-bold text-slate-900 mb-4">Why Agencies Choose Remedy AI</h2>
                   <p className="text-xl text-slate-600">Proven results that speak for themselves</p>
                 </div>
 
-                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
                     <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                       <Clock className="h-8 w-8 text-white" />
                     </div>
@@ -246,7 +246,7 @@ export default function LeadMagnetFunnel() {
                     </p>
                   </div>
 
-                  <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
+                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
                     <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                       <TrendingUp className="h-8 w-8 text-white" />
                     </div>
@@ -257,7 +257,7 @@ export default function LeadMagnetFunnel() {
                     </p>
                   </div>
 
-                  <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
+                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
                     <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                       <Shield className="h-8 w-8 text-white" />
                     </div>
@@ -279,7 +279,7 @@ export default function LeadMagnetFunnel() {
                   <p className="text-xl text-slate-600">My journey from frustrated agent to automation expert</p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
                   <div className="space-y-8">
                     <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100">
                       <h3 className="text-2xl font-bold text-slate-900 mb-4">The Breaking Point</h3>
@@ -344,36 +344,36 @@ export default function LeadMagnetFunnel() {
                   <p className="text-xl text-slate-300">Real transformations, real numbers</p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="grid md:grid-cols-4 gap-8">
                   <div className="text-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <Users className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                    <div className="w-20 h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Users className="h-10 w-10 text-white" />
                     </div>
-                    <div className="text-3xl md:text-4xl font-bold text-blue-300 mb-2">200+</div>
+                    <div className="text-4xl font-bold text-blue-300 mb-2">200+</div>
                     <div className="text-slate-300">Agencies Transformed</div>
                   </div>
 
                   <div className="text-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <Clock className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                    <div className="w-20 h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <Clock className="h-10 w-10 text-white" />
                     </div>
-                    <div className="text-3xl md:text-4xl font-bold text-blue-300 mb-2">15,000+</div>
+                    <div className="text-4xl font-bold text-blue-300 mb-2">15,000+</div>
                     <div className="text-slate-300">Hours Saved Monthly</div>
                   </div>
 
                   <div className="text-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <TrendingUp className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                    <div className="w-20 h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <TrendingUp className="h-10 w-10 text-white" />
                     </div>
-                    <div className="text-3xl md:text-4xl font-bold text-blue-300 mb-2">40%</div>
+                    <div className="text-4xl font-bold text-blue-300 mb-2">40%</div>
                     <div className="text-slate-300">Average Improvement</div>
                   </div>
 
                   <div className="text-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <DollarSign className="h-8 w-8 md:h-10 md:w-10 text-white" />
+                    <div className="w-20 h-20 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <DollarSign className="h-10 w-10 text-white" />
                     </div>
-                    <div className="text-3xl md:text-4xl font-bold text-blue-300 mb-2">$2M+</div>
+                    <div className="text-4xl font-bold text-blue-300 mb-2">$2M+</div>
                     <div className="text-slate-300">Additional Collections</div>
                   </div>
                 </div>
@@ -415,8 +415,8 @@ export default function LeadMagnetFunnel() {
               onValueChange={(value) => updateFormData("businessType", value)}
               className="space-y-4"
             >
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="insurance-agency" id="insurance-agency" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="insurance-agency" id="insurance-agency" />
                 <Label htmlFor="insurance-agency" className="flex-1 cursor-pointer">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
@@ -430,8 +430,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="financial-services" id="financial-services" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="financial-services" id="financial-services" />
                 <Label htmlFor="financial-services" className="flex-1 cursor-pointer">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
@@ -445,8 +445,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="real-estate" id="real-estate" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="real-estate" id="real-estate" />
                 <Label htmlFor="real-estate" className="flex-1 cursor-pointer">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
@@ -460,8 +460,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="other-service" id="other-service" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="other-service" id="other-service" />
                 <Label htmlFor="other-service" className="flex-1 cursor-pointer">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
@@ -493,8 +493,8 @@ export default function LeadMagnetFunnel() {
               onValueChange={(value) => updateFormData("followUpMethod", value)}
               className="space-y-4"
             >
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="manual-calls" id="manual-calls" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="manual-calls" id="manual-calls" />
                 <Label htmlFor="manual-calls" className="flex-1 cursor-pointer">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl flex items-center justify-center">
@@ -508,8 +508,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="manual-emails" id="manual-emails" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="manual-emails" id="manual-emails" />
                 <Label htmlFor="manual-emails" className="flex-1 cursor-pointer">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center">
@@ -523,8 +523,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="mix-manual" id="mix-manual" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="mix-manual" id="mix-manual" />
                 <Label htmlFor="mix-manual" className="flex-1 cursor-pointer">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-yellow-500 rounded-xl flex items-center justify-center">
@@ -538,8 +538,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="inconsistent" id="inconsistent" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="inconsistent" id="inconsistent" />
                 <Label htmlFor="inconsistent" className="flex-1 cursor-pointer">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-r from-gray-500 to-slate-500 rounded-xl flex items-center justify-center">
@@ -569,8 +569,8 @@ export default function LeadMagnetFunnel() {
               onValueChange={(value) => updateFormData("overdueClients", value)}
               className="space-y-4"
             >
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="1-10" id="1-10" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="1-10" id="1-10" />
                 <Label htmlFor="1-10" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="font-semibold text-slate-900">1-10 clients per month</div>
@@ -579,8 +579,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="11-25" id="11-25" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="11-25" id="11-25" />
                 <Label htmlFor="11-25" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="font-semibold text-slate-900">11-25 clients per month</div>
@@ -589,8 +589,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="26-50" id="26-50" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="26-50" id="26-50" />
                 <Label htmlFor="26-50" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="font-semibold text-slate-900">26-50 clients per month</div>
@@ -599,8 +599,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="50+" id="50+" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="50+" id="50+" />
                 <Label htmlFor="50+" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div className="font-semibold text-slate-900">50+ clients per month</div>
@@ -627,8 +627,8 @@ export default function LeadMagnetFunnel() {
               onValueChange={(value) => updateFormData("automationTools", value)}
               className="space-y-4"
             >
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="none" id="none" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="none" id="none" />
                 <Label htmlFor="none" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div>
@@ -640,8 +640,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="basic-crm" id="basic-crm" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="basic-crm" id="basic-crm" />
                 <Label htmlFor="basic-crm" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div>
@@ -653,8 +653,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="email-automation" id="email-automation" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="email-automation" id="email-automation" />
                 <Label htmlFor="email-automation" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div>
@@ -666,8 +666,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="advanced" id="advanced" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="advanced" id="advanced" />
                 <Label htmlFor="advanced" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div>
@@ -697,8 +697,8 @@ export default function LeadMagnetFunnel() {
               onValueChange={(value) => updateFormData("timeSpent", value)}
               className="space-y-4"
             >
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="1-5-hours" id="1-5-hours" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="1-5-hours" id="1-5-hours" />
                 <Label htmlFor="1-5-hours" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div>
@@ -710,8 +710,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="6-10-hours" id="6-10-hours" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="6-10-hours" id="6-10-hours" />
                 <Label htmlFor="6-10-hours" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div>
@@ -723,8 +723,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="11-20-hours" id="11-20-hours" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="11-20-hours" id="11-20-hours" />
                 <Label htmlFor="11-20-hours" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div>
@@ -736,8 +736,8 @@ export default function LeadMagnetFunnel() {
                 </Label>
               </div>
 
-              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md py-4">
-                <RadioGroupItem value="20+-hours" id="20+-hours" className="h-5 w-5" />
+              <div className="flex items-center space-x-4 p-6 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md">
+                <RadioGroupItem value="20+-hours" id="20+-hours" />
                 <Label htmlFor="20+-hours" className="flex-1 cursor-pointer">
                   <div className="flex items-center justify-between">
                     <div>
@@ -856,8 +856,8 @@ export default function LeadMagnetFunnel() {
                   onValueChange={(value) => updateFormData("businessSize", value)}
                   className="space-y-3"
                 >
-                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 py-3">
-                    <RadioGroupItem value="solo" id="solo" className="h-5 w-5" />
+                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200">
+                    <RadioGroupItem value="solo" id="solo" />
                     <Label htmlFor="solo" className="flex-1 cursor-pointer">
                       <div className="flex items-center justify-between">
                         <div className="font-semibold text-slate-900">Just me (solo agent/owner)</div>
@@ -866,8 +866,8 @@ export default function LeadMagnetFunnel() {
                     </Label>
                   </div>
 
-                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 py-3">
-                    <RadioGroupItem value="2-5" id="2-5" className="h-5 w-5" />
+                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200">
+                    <RadioGroupItem value="2-5" id="2-5" />
                     <Label htmlFor="2-5" className="flex-1 cursor-pointer">
                       <div className="flex items-center justify-between">
                         <div className="font-semibold text-slate-900">2-5 employees</div>
@@ -876,8 +876,8 @@ export default function LeadMagnetFunnel() {
                     </Label>
                   </div>
 
-                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 py-3">
-                    <RadioGroupItem value="6-15" id="6-15" className="h-5 w-5" />
+                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200">
+                    <RadioGroupItem value="6-15" id="6-15" />
                     <Label htmlFor="6-15" className="flex-1 cursor-pointer">
                       <div className="flex items-center justify-between">
                         <div className="font-semibold text-slate-900">6-15 employees</div>
@@ -888,8 +888,8 @@ export default function LeadMagnetFunnel() {
                     </Label>
                   </div>
 
-                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 py-3">
-                    <RadioGroupItem value="16+" id="16+" className="h-5 w-5" />
+                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200">
+                    <RadioGroupItem value="16+" id="16+" />
                     <Label htmlFor="16+" className="flex-1 cursor-pointer">
                       <div className="flex items-center justify-between">
                         <div className="font-semibold text-slate-900">16+ employees</div>
@@ -909,29 +909,29 @@ export default function LeadMagnetFunnel() {
                   onValueChange={(value) => updateFormData("annualRevenue", value)}
                   className="space-y-3"
                 >
-                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 py-3">
-                    <RadioGroupItem value="under-250k" id="under-250k" className="h-5 w-5" />
+                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200">
+                    <RadioGroupItem value="under-250k" id="under-250k" />
                     <Label htmlFor="under-250k" className="flex-1 cursor-pointer font-semibold text-slate-900">
                       Under $250K
                     </Label>
                   </div>
 
-                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 py-3">
-                    <RadioGroupItem value="250k-500k" id="250k-500k" className="h-5 w-5" />
+                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200">
+                    <RadioGroupItem value="250k-500k" id="250k-500k" />
                     <Label htmlFor="250k-500k" className="flex-1 cursor-pointer font-semibold text-slate-900">
                       $250K - $500K
                     </Label>
                   </div>
 
-                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 py-3">
-                    <RadioGroupItem value="500k-1m" id="500k-1m" className="h-5 w-5" />
+                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200">
+                    <RadioGroupItem value="500k-1m" id="500k-1m" />
                     <Label htmlFor="500k-1m" className="flex-1 cursor-pointer font-semibold text-slate-900">
                       $500K - $1M
                     </Label>
                   </div>
 
-                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200 py-3">
-                    <RadioGroupItem value="1m+" id="1m+" className="h-5 w-5" />
+                  <div className="flex items-center space-x-4 p-4 bg-white border border-slate-200 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 cursor-pointer transition-all duration-200">
+                    <RadioGroupItem value="1m+" id="1m+" />
                     <Label htmlFor="1m+" className="flex-1 cursor-pointer font-semibold text-slate-900">
                       $1M+
                     </Label>
@@ -1149,18 +1149,18 @@ export default function LeadMagnetFunnel() {
         {/* Progress Bar */}
         <div className="max-w-2xl mx-auto mb-8">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-xs md:text-sm font-medium text-slate-600">
+            <span className="text-sm font-medium text-slate-600">
               Step {currentStep} of {totalSteps - 1}
             </span>
-            <span className="text-xs md:text-sm font-medium text-slate-600">
+            <span className="text-sm font-medium text-slate-600">
               {Math.round(((currentStep - 1) / (totalSteps - 1)) * 100)}% Complete
             </span>
           </div>
-          <Progress value={((currentStep - 1) / (totalSteps - 1)) * 100} className="h-2 md:h-3" />
+          <Progress value={((currentStep - 1) / (totalSteps - 1)) * 100} className="h-3" />
         </div>
 
         {/* Question Card */}
-        <Card className="max-w-3xl mx-auto p-6 md:p-10 shadow-2xl border-0 bg-white/95 backdrop-blur-sm rounded-3xl">
+        <Card className="max-w-3xl mx-auto p-10 shadow-2xl border-0 bg-white/95 backdrop-blur-sm rounded-3xl">
           {renderStep()}
 
           {/* Navigation */}
@@ -1169,10 +1169,10 @@ export default function LeadMagnetFunnel() {
               variant="outline"
               onClick={prevStep}
               disabled={currentStep <= 1}
-              className="flex items-center px-4 py-2 md:px-6 md:py-3 border-slate-200 hover:bg-slate-50 rounded-xl transition-all duration-200 bg-transparent"
+              className="flex items-center px-6 py-3 border-slate-200 hover:bg-slate-50 rounded-xl transition-all duration-200"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Back</span>
+              Back
             </Button>
 
             {currentStep === totalSteps - 1 ? (

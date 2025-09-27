@@ -67,7 +67,7 @@ export default function AboutPage() {
                 className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors"
               >
                 <Home className="h-4 w-4" />
-                <span>Back to Home</span>
+                <span>Home</span>
               </Button>
             </div>
           </div>
@@ -471,7 +471,7 @@ export default function AboutPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                  className="border-white/30 hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 text-foreground"
                   onClick={() => (window.location.href = "/")}
                 >
                   Take the Assessment
