@@ -97,10 +97,34 @@ export default function LeadMagnetFunnel() {
     })
   }
 
-  const handleSubmit = () => {
-    console.log("Form submitted:", formData)
-    setCurrentStep(totalSteps)
+const handleSubmit = async () => {
+  console.log("Form submitted:", formData)
+
+  try {
+    const res = await fetch(
+      "https://services.leadconnectorhq.com/hooks/TPn8WlVu5mzgqASwKnKc/webhook-trigger/140adf93-0565-4342-a09b-73dea2fd5cf7",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: "hello world" }), // or formData
+      }
+    )
+
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`)
+    }
+
+    const data = await res.json()
+    console.log("Webhook response:", data)
+  } catch (error) {
+    console.error("Error sending webhook:", error)
   }
+
+  setCurrentStep(totalSteps)
+}
+
 
   const isStepValid = () => {
     switch (currentStep) {
