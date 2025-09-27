@@ -537,31 +537,31 @@ export default function AboutPage() {
               </div>
 
               <div className="text-center space-y-4">
-  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-8 w-8 text-white"
-      fill="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.268h-3v-4.5c0-1.072-.928-2-2-2s-2 .928-2 2v4.5h-3v-9h3v1.268c.557-.798 1.551-1.268 2.5-1.268 2.206 0 4 1.794 4 4v5z" />
-    </svg>
-  </div>
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.268h-3v-4.5c0-1.072-.928-2-2-2s-2 .928-2 2v4.5h-3v-9h3v1.268c.557-.798 1.551-1.268 2.5-1.268 2.206 0 4 1.794 4 4v5z" />
+                  </svg>
+                </div>
 
-  <div>
-    <h3 className="font-semibold text-gray-900">LinkedIn</h3>
-    <p className="text-gray-600">
-      <a
-        href="https://www.linkedin.com/in/elviscueva/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="underline hover:text-green-500"
-      >
-        linkedin.com/in/elviscueva
-      </a>
-    </p>
-  </div>
-</div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">LinkedIn</h3>
+                  <p className="text-gray-600">
+                    <a
+                      href="https://www.linkedin.com/in/elviscueva/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-green-500"
+                    >
+                      linkedin.com/in/elviscueva
+                    </a>
+                  </p>
+                </div>
+              </div>
 
               <div className="text-center space-y-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
