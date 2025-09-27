@@ -108,7 +108,7 @@ const handleSubmit = async () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ message: "hello world" }), // or formData
+        body: JSON.stringify(formData), // or formData
       }
     )
 
