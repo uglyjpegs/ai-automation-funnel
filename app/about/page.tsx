@@ -249,13 +249,7 @@ export default function AboutPage() {
 
             {/* CTA after experience */}
             <div className="text-center mt-8 md:mt-12">
-              <Button
-                onClick={() => (window.location.href = "/")}
-                size="lg"
-                className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 md:px-12 py-4 text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-              >
-                Get My Free Assessment <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              
             </div>
           </div>
         </section>
