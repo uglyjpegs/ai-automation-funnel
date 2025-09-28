@@ -401,7 +401,7 @@ export default function LeadMagnetFunnel() {
             </section>
 
             {/* Final CTA */}
-            <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-12 md:py-16 px-4 md:px-8 rounded-2xl md:rounded-3xl border border-blue-100 text-center">
+            <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-12 px-4 md:px-8 rounded-2xl md:rounded-3xl border border-blue-100 text-center md:py-[33px]">
               <div className="max-w-4xl mx-auto space-y-6 md:space-y-8">
                 <h2 className="text-2xl md:text-4xl font-bold text-slate-900">Ready to Transform Your Agency?</h2>
                 <p className="text-lg md:text-xl text-slate-600 px-2">
