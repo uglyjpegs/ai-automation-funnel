@@ -195,7 +195,7 @@ export default function LeadMagnetFunnel() {
     switch (currentStep) {
       case 0:
         return (
-          <div className="space-y-8 pb-20 md:pb-8">
+          <div className="space-y-8 pb-20 md:pb-[0]">
             {/* Hero Section - Mobile Optimized */}
             <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white py-12 md:py-20 px-4 md:px-8 rounded-2xl md:rounded-3xl shadow-2xl">
               <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
