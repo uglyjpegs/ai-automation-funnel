@@ -75,7 +75,7 @@ export default function AboutPage() {
             <div className="text-center md:text-left space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-12 md:items-center">
               {/* Mobile: Image First */}
               <div className="order-2 md:order-2 space-y-4 md:space-y-6">
-                <div className="w-48 h-48 md:w-80 md:h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl md:rounded-3xl flex items-center justify-center mx-auto shadow-2xl overflow-hidden">
+                <div className="w-60 h-60 md:w-80 md:h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl md:rounded-3xl flex items-center justify-center mx-auto shadow-2xl overflow-hidden">
                   <Image
                     src="/images/squarepp2.png"
                     alt="Elvis Cueva Profile"
