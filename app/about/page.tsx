@@ -10,7 +10,6 @@ import {
   Palette,
   Code,
   Globe,
-  Phone,
   Mail,
   Calendar,
   CheckCircle,
@@ -108,23 +107,23 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-                <div className="space-y-6">
-                  <div className="w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto shadow-2xl overflow-hidden">
-                    <Image
-                      src="/images/squarepp2.png"
-                      alt="Profile"
-                      width={320}   // matches w-80 (80 * 4 = 320px)
-                      height={320}  // matches h-80
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
-                  <div className="text-center">
-                    <p className="text-blue-200 font-medium">
-                      "I've been on both sides – serving clients and building solutions. That's what makes the
-                      difference."
-                    </p>
-                  </div>
+              <div className="space-y-6">
+                <div className="w-80 h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center mx-auto shadow-2xl overflow-hidden">
+                  <Image
+                    src="/images/squarepp2.png"
+                    alt="Profile"
+                    width={320}
+                    height={320}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
+                <div className="text-center">
+                  <p className="text-blue-200 font-medium">
+                    "I've been on both sides – serving clients and building solutions. That's what makes the
+                    difference."
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -133,7 +132,7 @@ export default function AboutPage() {
         <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-16 px-8 rounded-3xl border border-blue-100">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">My Experien </h2>
+              <h2 className="text-4xl font-bold text-slate-900 mb-4">My Experience </h2>
               <p className="text-xl text-slate-600">From frontline service to automation expertise</p>
             </div>
 
@@ -303,70 +302,45 @@ export default function AboutPage() {
               <div className="space-y-8">
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
                   <h3 className="text-xl font-bold text-green-300 mb-4">Professional Experience</h3>
-                  <div className="space-y-8">
-  <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
-    <h3 className="text-xl font-bold text-green-300 mb-4">Professional Experience</h3>
-    <div className="space-y-4">
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-white">
+                          Structural Designer - Master Consulting Engineers, Inc.
+                        </div>
+                        <div className="text-slate-300 text-sm">
+                          Collaborated with engineers and architects to document structural systems for commercial,
+                          residential, and institutional buildings (Jun 2025 - Aug 2025)
+                        </div>
+                      </div>
+                    </div>
 
-      <div className="flex items-start space-x-3">
-        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-semibold text-white">Structural Designer - Master Consulting Engineers, Inc.</div>
-          <div className="text-slate-300 text-sm">
-            Collaborated with engineers and architects to document structural systems for commercial, residential, and institutional buildings (Jun 2025 - Aug 2025)
-          </div>
-        </div>
-      </div>
+                    <div className="flex items-start space-x-3">
+                      <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-white">Architectural Revit Technician - HH Architecture</div>
+                        <div className="text-slate-300 text-sm">
+                          Assisted with drawing coordination and production across all design and construction phases
+                          (Jul 2022 - Feb 2023)
+                        </div>
+                      </div>
+                    </div>
 
-      <div className="flex items-start space-x-3">
-        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-semibold text-white">Designer - Belimed</div>
-          <div className="text-slate-300 text-sm">
-            Created production and installation drawings for healthcare equipment, coordinating with engineers and project managers (Dec 2024 - May 2025)
-          </div>
-        </div>
-      </div>
-
-      <div className="flex items-start space-x-3">
-        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-semibold text-white">Architectural Revit Technician - HH Architecture</div>
-          <div className="text-slate-300 text-sm">
-            Assisted with drawing coordination and production across all design and construction phases (Jul 2022 - Feb 2023)
-          </div>
-        </div>
-      </div>
-
-      <div className="flex items-start space-x-3">
-        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-semibold text-white">Management - MGS Auto Sales</div>
-          <div className="text-slate-300 text-sm">
-            Developed datasets and reports for inventory, maintained website, and implemented marketing strategies for small businesses (Feb 2019 - Jul 2020)
-          </div>
-        </div>
-      </div>
-
-      <div className="flex items-start space-x-3">
-        <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
-        <div>
-          <div className="font-semibold text-white">Management - Latino Servi-Tax Corp</div>
-          <div className="text-slate-300 text-sm">
-            Filed personal and commercial taxes, assisted clients with payments and insurance, and designed company logo (Sep 2014 - Present)
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div className="mt-6 text-center">
-  </div>
-</div>
-
+                    <div className="flex items-start space-x-3">
+                      <Briefcase className="h-5 w-5 text-green-400 mt-1 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-white">Management - MGS Auto Sales</div>
+                        <div className="text-slate-300 text-sm">
+                          Developed datasets and reports for inventory, maintained website, and implemented marketing
+                          strategies for small businesses (Feb 2019 - Jul 2020)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-6 rounded-2xl border border-blue-400/30 my-6">
+                <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-6 rounded-2xl border border-blue-400/30">
                   <h3 className="text-xl font-bold text-white mb-3">Why This Combination Works</h3>
                   <p className="text-blue-100 leading-relaxed">
                     My technical background gives me the skills to build sophisticated automation systems, while my
@@ -510,7 +484,7 @@ export default function AboutPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white/30 hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 text-foreground"
+                  className="border-white/30 hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 text-white bg-transparent border-white/30"
                   onClick={() => (window.location.href = "/")}
                 >
                   Take the Assessment
@@ -526,7 +500,6 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Let's Connect</h2>
             <div className="grid md:grid-cols-3 gap-8">
-            
               {/* Email */}
               <div className="text-center space-y-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
@@ -576,7 +549,6 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-
           </div>
         </section>
       </div>
