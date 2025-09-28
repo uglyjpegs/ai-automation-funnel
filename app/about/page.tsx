@@ -81,13 +81,11 @@ export default function AboutPage() {
                     alt="Elvis Cueva Profile"
                     width={192}
                     height={192}
-                    className="object-cover w-full h-full md:w-80 md:h-80"
+                    className="object-cover w-full md:w-80 md:h-80 h-full"
                   />
                 </div>
                 <div className="text-center">
-                  <p className="text-blue-200 font-medium text-sm md:text-base">
-                    "I've been on both sides – serving clients and building solutions."
-                  </p>
+                  
                 </div>
               </div>
 
@@ -101,7 +99,7 @@ export default function AboutPage() {
                     </span>
                   </h1>
                   <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
-                    From serving thousands of clients to automating payment follow-ups for 200+ agencies.
+                    From serving thousands of clients to automating client follow-ups for 200+ agencies. Serving both the Spanish and English communities.         
                   </p>
                   <p className="text-base md:text-lg text-slate-400">
                     I understand your challenges because I've lived them.

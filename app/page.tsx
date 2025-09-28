@@ -155,7 +155,7 @@ export default function LeadMagnetFunnel() {
       className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors text-sm"
     >
       <User className="h-4 w-4" />
-      <span>About</span>
+      <span>About Us  </span>
     </Button>
   )
 
@@ -188,14 +188,7 @@ export default function LeadMagnetFunnel() {
 
   // Sticky CTA for mobile
   const StickyMobileCTA = () => (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-4 z-40 md:hidden">
-      <Button
-        onClick={nextStep}
-        className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-4 text-lg font-semibold rounded-xl shadow-lg"
-      >
-        Get Free Audit <ArrowRight className="ml-2 h-5 w-5" />
-      </Button>
-    </div>
+    null
   )
 
   const renderStep = () => {
