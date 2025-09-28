@@ -572,7 +572,7 @@ export default function AboutPage() {
               </div>
 
               {/* Languages */}
-              <div className="text-center space-y-3 md:space-y-4">
+              <div className="text-center space-y-3 md:space-y-4 col-span-2 md:col-auto">
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl md:rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                   <Globe className="h-6 w-6 md:h-8 md:w-8 text-white" />
                 </div>
