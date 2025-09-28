@@ -42,6 +42,11 @@ export default function AboutPage() {
     </div>
   )
 
+  const startAssessment = () => {
+    // Navigate to home page with query parameter to start questionnaire
+    window.location.href = "/?start=true"
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       {/* Header - Mobile Optimized */}
@@ -84,9 +89,7 @@ export default function AboutPage() {
                     className="object-cover w-full md:w-80 md:h-80 h-full"
                   />
                 </div>
-                <div className="text-center">
-                  
-                </div>
+                <div className="text-center"></div>
               </div>
 
               {/* Mobile: Content Second */}
@@ -99,7 +102,8 @@ export default function AboutPage() {
                     </span>
                   </h1>
                   <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
-                    From serving thousands of clients to automating client follow-ups for 200+ agencies. Serving both the Spanish and English communities.         
+                    From serving thousands of clients to automating client follow-ups for 200+ agencies. Serving both
+                    the Spanish and English communities.
                   </p>
                   <p className="text-base md:text-lg text-slate-400">
                     I understand your challenges because I've lived them.
@@ -125,7 +129,7 @@ export default function AboutPage() {
                 {/* Mobile CTA */}
                 <div className="text-center md:text-left">
                   <Button
-                    onClick={() => (window.location.href = "/")}
+                    onClick={startAssessment}
                     size="lg"
                     className="w-full md:w-auto bg-white text-slate-900 hover:bg-slate-100 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
                   >
@@ -249,7 +253,13 @@ export default function AboutPage() {
 
             {/* CTA after experience */}
             <div className="text-center mt-8 md:mt-12">
-              
+              <Button
+                onClick={startAssessment}
+                size="lg"
+                className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              >
+                Start My Free Assessment <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </div>
           </div>
         </section>
@@ -469,7 +479,15 @@ export default function AboutPage() {
             </div>
 
             {/* CTA after results */}
-            
+            <div className="text-center mt-8 md:mt-12">
+              <Button
+                onClick={startAssessment}
+                size="lg"
+                className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              >
+                Start My Free Assessment <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
         </section>
 
@@ -512,7 +530,7 @@ export default function AboutPage() {
                   size="lg"
                   variant="outline"
                   className="border-white/30 hover:bg-white/10 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-xl transition-all duration-300 text-white bg-transparent border-white/30"
-                  onClick={() => (window.location.href = "/")}
+                  onClick={startAssessment}
                 >
                   Take the Assessment
                   <ArrowRight className="ml-2 h-5 w-5" />

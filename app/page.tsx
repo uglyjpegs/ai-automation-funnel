@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -63,6 +63,16 @@ export default function LeadMagnetFunnel() {
 
   const totalSteps = 10
 
+  // Check for start parameter on component mount
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get("start") === "true") {
+      setCurrentStep(1) // Start questionnaire
+      // Clean up URL
+      window.history.replaceState({}, document.title, window.location.pathname)
+    }
+  }, [])
+
   const updateFormData = (field: keyof FormData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
@@ -97,36 +107,10 @@ export default function LeadMagnetFunnel() {
     })
   }
 
-const handleSubmit = async () => {
-  console.log("Form submitted:", formData)
-
-  try {
-    const res = await fetch(
-      "https://services.leadconnectorhq.com/hooks/TPn8WlVu5mzgqASwKnKc/webhook-trigger/140adf93-0565-4342-a09b-73dea2fd5cf7",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData), // or formData
-      }
-    )
-
-    if (!res.ok) {
-      throw new Error(`HTTP error! status: ${res.status}`)
-    }
-
-    const data = await res.json()
-    console.log("Webhook response:", data)
-  } catch (error) {
-    console.error("Error sending webhook:", error)
+  const handleSubmit = () => {
+    console.log("Form submitted:", formData)
+    setCurrentStep(totalSteps)
   }
-
-  setCurrentStep(totalSteps)
-}
-
-
-
 
   const isStepValid = () => {
     switch (currentStep) {
@@ -181,7 +165,7 @@ const handleSubmit = async () => {
       className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors text-sm"
     >
       <User className="h-4 w-4" />
-      <span>About Us  </span>
+      <span>About Us </span>
     </Button>
   )
 
@@ -213,9 +197,7 @@ const handleSubmit = async () => {
   )
 
   // Sticky CTA for mobile
-  const StickyMobileCTA = () => (
-    null
-  )
+  const StickyMobileCTA = () => null
 
   const renderStep = () => {
     switch (currentStep) {
@@ -237,7 +219,7 @@ const handleSubmit = async () => {
                     growing your business.
                   </p>
                 </div>
-
+                <VideoPlaceholder title="Upcoming" description="upcoming" />
                 <Button
                   onClick={nextStep}
                   size="lg"
@@ -300,9 +282,7 @@ const handleSubmit = async () => {
                 </div>
 
                 {/* CTA after benefits */}
-                <div className="text-center mt-8 md:mt-12">
-                  
-                </div>
+                <div className="text-center mt-8 md:mt-12"></div>
               </div>
             </section>
 
@@ -420,9 +400,7 @@ const handleSubmit = async () => {
                 </div>
 
                 {/* CTA after story */}
-                <div className="text-center mt-8 md:mt-12">
-                  
-                </div>
+                <div className="text-center mt-8 md:mt-12"></div>
               </div>
             </section>
 
