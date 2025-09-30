@@ -521,7 +521,7 @@ export default function AboutPage() {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-                  onClick={() => window.open("https://calendly.com/your-calendar", "_blank")}
+                  onClick={() => window.open("https://cal.com/elvis-cueva/30min", "_blank")}
                 >
                   <Calendar className="mr-2 h-5 w-5" />
                   Schedule a Call
