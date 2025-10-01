@@ -164,20 +164,7 @@ const handleSubmit = async () => {
 
   const VideoPlaceholder = ({ title, description }: { title: string; description: string }) => (
     <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl overflow-hidden aspect-video shadow-lg">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center space-y-3">
-          <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto shadow-lg">
-            <Play className="h-8 w-8 text-white ml-1" />
-          </div>
-          <div className="text-white px-4">
-            <h4 className="font-bold text-base">{title}</h4>
-            <p className="text-slate-300 text-sm">{description}</p>
-          </div>
-        </div>
-      </div>
-      <div className="absolute top-3 right-3 bg-black/60 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">
-        4:32
-      </div>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cSvkSK7Yvxg?si=zDHZN3JvazpZJUoX" title="How to automate Insurance Agency" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   )
 
@@ -1230,7 +1217,7 @@ const handleSubmit = async () => {
               <Button
                 size="lg"
                 className="w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 md:px-12 py-4 text-lg md:text-xl font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-                onClick={() => window.open("https://calendly.com/your-calendar", "_blank")}
+                onClick={() => window.open("https://cal.com/elvis-cueva/30min", "_blank")}
               >
                 <Calendar className="mr-2 md:mr-3 h-5 w-5 md:h-6 md:w-6" />
                 Book Your Free Strategy Call
