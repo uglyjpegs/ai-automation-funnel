@@ -164,7 +164,7 @@ const handleSubmit = async () => {
 
   const VideoPlaceholder = ({ title, description }: { title: string; description: string }) => (
     <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl overflow-hidden aspect-video shadow-lg">
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cSvkSK7Yvxg?si=zDHZN3JvazpZJUoX" title="How to automate Insurance Agency" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/pf2v0EvIoUQ?si=_o-XUAqVZ7IJI3-_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   )
 
