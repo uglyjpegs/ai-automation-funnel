@@ -162,9 +162,9 @@ const handleSubmit = async () => {
     }
   }
 
-  const VideoPlaceholder = ({ title, description }: { title: string; description: string }) => (
+  const VideoPlaceholder = ({ title, description, url="https://www.youtube.com/embed/pf2v0EvIoUQ?si=_o-XUAqVZ7IJI3-_" }: { title: string; description: string, url: string }) => (
     <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl overflow-hidden aspect-video shadow-lg">
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/pf2v0EvIoUQ?si=_o-XUAqVZ7IJI3-_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="100%" src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   )
 
@@ -229,7 +229,7 @@ const handleSubmit = async () => {
                     growing your business.
                   </p>
                 </div>
-                <VideoPlaceholder title="Upcoming" description="upcoming" />
+                <VideoPlaceholder title="Upcoming" description="upcoming"  />
                 <Button
                   onClick={nextStep}
                   size="lg"
@@ -1157,7 +1157,7 @@ const handleSubmit = async () => {
             </div>
 
             <div className="max-w-2xl mx-auto">
-              <VideoPlaceholder title="What to Expect Next" description="A preview of your custom automation audit" />
+              <VideoPlaceholder title="What to Expect Next" description="A preview of your custom automation audit" url="/after_appointment.mp4" />
             </div>
 
             <div className="bg-gradient-to-r from-slate-900 to-blue-900 p-6 md:p-8 rounded-xl md:rounded-2xl text-white shadow-2xl">
