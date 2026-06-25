@@ -1,6 +1,8 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 import {
   ArrowRight,
   Users,
@@ -18,7 +20,6 @@ import {
   Heart,
   Briefcase,
   GraduationCap,
-  Home,
 } from "lucide-react"
 import Image from "next/image"
 
@@ -43,35 +44,12 @@ export default function AboutPage() {
   )
 
   const startAssessment = () => {
-    // Navigate to home page with query parameter to start questionnaire
-    window.location.href = "/?start=true"
+    window.location.href = "/funnel?start=true"
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
-      {/* Header - Mobile Optimized */}
-      <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-32 h-8 relative">
-                <Image src="/images/Grey.png" alt="Remedy AI Logo" width={128} height={32} className="object-contain" />
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Button
-                variant="ghost"
-                onClick={() => (window.location.href = "/")}
-                className="flex items-center space-x-2 text-slate-600 hover:text-blue-600 transition-colors text-sm"
-              >
-                <Home className="h-4 w-4" />
-                <span className="hidden sm:inline">Back to Home</span>
-                <span className="sm:hidden">Home</span>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <SiteHeader />
 
       <div className="container mx-auto px-4 py-6 md:py-12 space-y-8 md:space-y-16">
         {/* Hero Section - Mobile First */}
@@ -597,6 +575,7 @@ export default function AboutPage() {
           </div>
         </section>
       </div>
+      <SiteFooter />
     </div>
   )
 }

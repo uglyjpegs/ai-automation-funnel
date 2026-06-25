@@ -5,9 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'Remedy AI — AI-Powered Marketing for Agencies',
+  description: 'Done-for-you Meta ads, CRM automation, and AI follow-up systems. Remedy AI helps agencies scale without hiring.',
 }
 
 export default function RootLayout({
