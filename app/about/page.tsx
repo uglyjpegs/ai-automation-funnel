@@ -11,7 +11,6 @@ import {
   Building,
   Globe,
   Mail,
-  Calendar,
   CheckCircle,
   Star,
   Target,
@@ -89,6 +88,26 @@ export default function AboutPage() {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Personal Video */}
+        <section className="px-4 md:px-8">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-6">
+              <span className="text-sm font-semibold text-blue-600 uppercase tracking-widest">Hear It From Elvis</span>
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mt-2">Why I Built RemedyAds</h2>
+              <p className="text-slate-600 mt-2 max-w-lg mx-auto">The real story — from running a home service business to building systems that work for hundreds of agencies.</p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden aspect-video shadow-2xl bg-slate-900">
+              <video
+                src="/after_appointment.mp4"
+                controls
+                playsInline
+                preload="metadata"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </div>
         </section>

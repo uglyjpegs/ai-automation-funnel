@@ -288,14 +288,18 @@ export default function HomePage() {
               <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mt-2">From Zero to Fully Automated in 7 Days</h2>
               <p className="text-slate-600 mt-2 max-w-xl mx-auto">Watch how we take an agency from manual chaos to a system that runs itself — ads, CRM, and AI follow-up all working together.</p>
             </div>
-            <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 rounded-2xl overflow-hidden aspect-video shadow-2xl flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto border-2 border-white/40 hover:bg-white/30 transition-colors cursor-pointer">
-                  <Play className="h-9 w-9 text-white ml-1" />
-                </div>
-                <p className="text-white font-semibold text-lg">Agency Transformation Overview</p>
-                <p className="text-slate-300 text-sm">Full walkthrough coming soon</p>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden aspect-video shadow-2xl bg-slate-900">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/pf2v0EvIoUQ?si=_o-XUAqVZ7IJI3-_"
+                title="RemedyAds — Agency Transformation Overview"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
             </div>
           </div>
         </section>
