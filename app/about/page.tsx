@@ -297,10 +297,10 @@ export default function AboutPage() {
               <Button
                 size="lg"
                 className="bg-white text-slate-900 hover:bg-slate-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-xl transition-all duration-300"
-                onClick={() => window.open("https://cal.com/elvis-cueva/30min", "_blank")}
+                onClick={() => window.location.href = "/funnel"}
               >
-                <Calendar className="mr-2 h-5 w-5" />
-                Schedule a Call
+                <ArrowRight className="mr-2 h-5 w-5" />
+                Start Free Assessment
               </Button>
               <Button
                 size="lg"

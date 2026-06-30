@@ -33,12 +33,10 @@ export function SiteHeader() {
 
           <div className="hidden md:flex items-center">
             <Link
-              href="https://cal.com/elvis-cueva/30min"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/funnel"
               className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 shadow-lg shadow-purple-500/20"
             >
-              Book a Free Call
+              Get Free Audit
             </Link>
           </div>
 
@@ -70,12 +68,10 @@ export function SiteHeader() {
             <Link href="/about" className="block px-3 py-2.5 text-sm text-slate-600 hover:text-slate-900" onClick={() => setMobileOpen(false)}>About</Link>
             <div className="pt-2">
               <Link
-                href="https://cal.com/elvis-cueva/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/funnel"
                 className="block text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-semibold px-5 py-3 rounded-xl"
               >
-                Book a Free Call
+                Get Free Audit
               </Link>
             </div>
           </div>

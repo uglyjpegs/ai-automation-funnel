@@ -257,13 +257,11 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="https://cal.com/elvis-cueva/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/funnel"
                 className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl text-lg"
               >
-                <Calendar className="h-5 w-5" />
-                Book a Free Strategy Call
+                <ArrowRight className="h-5 w-5" />
+                Start Free Assessment
               </Link>
               <Link
                 href="#services"
@@ -494,14 +492,11 @@ export default function HomePage() {
               Book a free 30-minute strategy call. We'll show you exactly what we'd build for your agency.
             </p>
             <Link
-              href="https://cal.com/elvis-cueva/30min"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/funnel"
               className="inline-flex items-center gap-3 bg-white text-slate-900 hover:bg-slate-100 font-semibold px-10 py-5 rounded-xl transition-all duration-200 shadow-2xl text-lg"
             >
-              <Calendar className="h-5 w-5" />
-              Book Your Free Strategy Call
               <ArrowRight className="h-5 w-5" />
+              Start Free Assessment
             </Link>
             <p className="text-sm text-slate-400">No commitment. No pressure. Just a real conversation.</p>
           </div>

@@ -58,13 +58,11 @@ export default function AiFollowUpPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="https://cal.com/elvis-cueva/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/funnel"
                 className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl text-lg"
               >
-                <Calendar className="h-5 w-5" />
-                See It in Action
+                <ArrowRight className="h-5 w-5" />
+                Get My Free Audit
               </Link>
               <Link
                 href="/funnel"
@@ -192,13 +190,11 @@ export default function AiFollowUpPage() {
               <p className="text-slate-600 mb-8">Take our free 2-minute audit and get a custom AI follow-up blueprint for your agency.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="https://cal.com/elvis-cueva/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/funnel"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold px-7 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-pink-500/20"
                 >
-                  <Calendar className="h-5 w-5" />
-                  Book a Strategy Call
+                  Start Free Assessment
+                  <ArrowRight className="h-5 w-5" />
                 </Link>
                 <Link
                   href="/funnel"

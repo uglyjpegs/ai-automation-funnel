@@ -58,13 +58,11 @@ export default function CrmAutomationPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="https://cal.com/elvis-cueva/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/funnel"
                 className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl text-lg"
               >
-                <Calendar className="h-5 w-5" />
-                Get a Free CRM Audit
+                <ArrowRight className="h-5 w-5" />
+                Get My Free Audit
               </Link>
               <Link
                 href="/"
@@ -182,13 +180,10 @@ export default function CrmAutomationPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Stop losing leads to manual processes</h2>
               <p className="text-slate-600 mb-8">Book a free call. We'll review your current setup and show you what's leaking leads right now.</p>
               <Link
-                href="https://cal.com/elvis-cueva/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/funnel"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-violet-500 hover:from-purple-600 hover:to-violet-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-purple-500/20 text-lg"
               >
-                <Calendar className="h-5 w-5" />
-                Book Free CRM Audit
+                Start Free Assessment
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <p className="text-sm text-slate-400 mt-4">No commitment. No fluff.</p>
