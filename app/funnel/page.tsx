@@ -140,7 +140,7 @@ export default function LeadMagnetFunnel() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-32 h-8 relative">
-              <Image src="/images/Grey.png" alt="Remedy AI Logo" width={128} height={32} className="object-contain" />
+              <Image src="/images/logo-horizontal.png" alt="RemedyAds" width={150} height={40} className="object-contain" />
             </div>
           </div>
           <div className="flex items-center space-x-4">

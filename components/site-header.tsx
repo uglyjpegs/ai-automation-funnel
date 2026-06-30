@@ -19,7 +19,7 @@ export function SiteHeader() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center shrink-0">
-            <Image src="/images/Grey.png" alt="Remedy AI" width={120} height={32} className="object-contain" />
+            <Image src="/images/logo-horizontal.png" alt="RemedyAds" width={150} height={40} className="object-contain" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

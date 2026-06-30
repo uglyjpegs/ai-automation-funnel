@@ -7,7 +7,7 @@ export function SiteFooter() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           <div className="col-span-2">
-            <Image src="/images/Grey.png" alt="Remedy AI" width={120} height={32} className="object-contain mb-4" />
+            <Image src="/images/logo-horizontal.png" alt="RemedyAds" width={150} height={40} className="object-contain mb-4" />
             <p className="text-sm text-slate-500 max-w-xs leading-relaxed">
               AI-powered marketing and automation for agencies ready to scale without adding headcount.
             </p>
