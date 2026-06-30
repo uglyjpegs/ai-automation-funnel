@@ -25,6 +25,8 @@ export function SiteFooter() {
             <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Company</h4>
             <ul className="space-y-3">
               <li><Link href="/about" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">About Elvis</Link></li>
+              <li><Link href="/honest-water" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">Case Study: $0 → $100K</Link></li>
+              <li><Link href="/funnel" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">Free Assessment</Link></li>
             </ul>
           </div>
         </div>

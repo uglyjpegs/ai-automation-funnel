@@ -28,6 +28,7 @@ export function SiteHeader() {
                 {s.name}
               </Link>
             ))}
+            <Link href="/honest-water" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Results</Link>
             <Link href="/about" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">About</Link>
           </nav>
 
@@ -65,6 +66,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <div className="border-t border-slate-200 my-3" />
+            <Link href="/honest-water" className="block px-3 py-2.5 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg" onClick={() => setMobileOpen(false)}>Results — $0 to $100K</Link>
             <Link href="/about" className="block px-3 py-2.5 text-sm text-slate-600 hover:text-slate-900" onClick={() => setMobileOpen(false)}>About</Link>
             <div className="pt-2">
               <Link
