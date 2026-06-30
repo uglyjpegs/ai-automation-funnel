@@ -25,21 +25,6 @@ export function SiteFooter() {
             <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">Company</h4>
             <ul className="space-y-3">
               <li><Link href="/about" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">About Elvis</Link></li>
-              <li>
-                <Link
-                  href="https://cal.com/elvis-cueva/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-slate-500 hover:text-slate-900 transition-colors"
-                >
-                  Book a Call
-                </Link>
-              </li>
-              <li>
-                <a href="mailto:ejcuevac01@gmail.com" className="text-sm text-slate-500 hover:text-slate-900 transition-colors">
-                  Contact
-                </a>
-              </li>
             </ul>
           </div>
         </div>
