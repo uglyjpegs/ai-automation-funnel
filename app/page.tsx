@@ -16,9 +16,15 @@ import {
 } from "lucide-react"
 
 export const metadata = {
-  title: "Remedy AI — AI-Powered Marketing for Agencies",
+  title: "RemedyAds — AI-Powered Marketing for Agencies",
   description:
-    "Done-for-you Meta ads, CRM automation, and AI follow-up systems. Remedy AI helps agencies scale without hiring.",
+    "Done-for-you Meta ads, CRM automation, and AI follow-up systems. RemedyAds helps service businesses and agencies scale without hiring. English & Spanish.",
+  alternates: { canonical: "https://remedyads.com" },
+  openGraph: {
+    title: "RemedyAds — AI-Powered Marketing for Agencies",
+    description: "Done-for-you Meta ads, CRM automation, and AI follow-up systems. Scale without hiring.",
+    url: "https://remedyads.com",
+  },
 }
 
 const services = [
@@ -100,7 +106,7 @@ const testimonials = [
   },
   {
     quote:
-      "What sets Remedy AI apart is real-world experience. Elvis doesn't just build technology — he builds solutions that actually work for agencies like ours.",
+      "What sets RemedyAds apart is real-world experience. Elvis doesn't just build technology — he builds solutions that actually work for agencies like ours.",
     name: "James Thompson",
     title: "Thompson Financial Services",
   },
@@ -128,7 +134,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Stop guessing. Start scaling. Remedy AI builds and manages your Meta ads, CRM automation, and AI
+              Stop guessing. Start scaling. RemedyAds builds and manages your Meta ads, CRM automation, and AI
               follow-up systems — fully done for you.
             </p>
 

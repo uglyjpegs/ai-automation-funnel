@@ -199,7 +199,7 @@ export default function LeadMagnetFunnel() {
             <section className="px-4 md:px-8">
               <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-8 md:mb-12">
-                  <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-3 md:mb-4">Why Agencies Choose Remedy AI</h2>
+                  <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-3 md:mb-4">Why Agencies Choose RemedyAds</h2>
                   <p className="text-lg md:text-xl text-slate-600">Proven results that speak for themselves</p>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">

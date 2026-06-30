@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div className="col-span-2">
             <Image src="/images/logo-horizontal.png" alt="RemedyAds" width={150} height={40} className="object-contain mb-4" />
             <p className="text-sm text-slate-500 max-w-xs leading-relaxed">
-              AI-powered marketing and automation for agencies ready to scale without adding headcount.
+              AI-powered marketing and automation for agencies ready to scale without adding headcount. English & Spanish.
             </p>
             <p className="text-sm text-slate-400 mt-4">English & Spanish · Serving nationwide</p>
           </div>
@@ -44,7 +44,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="border-t border-slate-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-slate-400">© {new Date().getFullYear()} Remedy AI. All rights reserved.</p>
+          <p className="text-xs text-slate-400">© {new Date().getFullYear()} RemedyAds. All rights reserved.</p>
           <a href="mailto:ejcuevac01@gmail.com" className="text-xs text-slate-400 hover:text-slate-600 transition-colors">ejcuevac01@gmail.com</a>
         </div>
       </div>
