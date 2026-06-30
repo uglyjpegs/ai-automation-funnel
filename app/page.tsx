@@ -108,73 +108,70 @@ const testimonials = [
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       <SiteHeader />
-      <main>
-        {/* Hero */}
-        <section className="relative overflow-hidden py-24 md:py-36 px-4">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-to-b from-blue-600/20 to-purple-600/10 rounded-full blur-3xl" />
-          </div>
+      <div className="container mx-auto px-4 py-6 md:py-12 space-y-8 md:space-y-16">
 
-          <div className="relative max-w-5xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-700 bg-zinc-900 text-xs text-zinc-400 font-medium mb-8">
+        {/* Hero */}
+        <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white py-16 md:py-24 px-6 md:px-12 rounded-2xl md:rounded-3xl shadow-2xl">
+          <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-xs text-slate-300 font-medium">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
               Now accepting new clients · English &amp; Spanish
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight">
               AI-Powered Marketing
               <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 That Actually Converts
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-zinc-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
               Stop guessing. Start scaling. Remedy AI builds and manages your Meta ads, CRM automation, and AI
               follow-up systems — fully done for you.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="https://cal.com/elvis-cueva/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-purple-500/20 text-lg"
+                className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 hover:bg-slate-100 font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl text-lg"
               >
                 <Calendar className="h-5 w-5" />
                 Book a Free Strategy Call
               </Link>
               <Link
                 href="#services"
-                className="inline-flex items-center justify-center gap-2 border border-zinc-700 hover:border-zinc-500 text-zinc-300 hover:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 text-lg"
+                className="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white/60 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 text-lg"
               >
                 See Our Services
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-zinc-600">
-              <span className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-500" />200+ Agencies</span>
-              <span className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-500" />No Long-Term Contracts</span>
-              <span className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-500" />Results in 7-10 Days</span>
-              <span className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-500" />English &amp; Spanish</span>
+            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400">
+              <span className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-400" />200+ Agencies</span>
+              <span className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-400" />No Long-Term Contracts</span>
+              <span className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-400" />Results in 7-10 Days</span>
+              <span className="flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-400" />English &amp; Spanish</span>
             </div>
           </div>
         </section>
 
         {/* Services */}
-        <section id="services" className="py-24 px-4 border-t border-zinc-800/50">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <span className="text-sm font-semibold text-purple-400 uppercase tracking-widest">What We Build</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4">
+        <section id="services" className="px-4 md:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-10 md:mb-14">
+              <span className="text-sm font-semibold text-purple-600 uppercase tracking-widest">What We Build</span>
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-3 mb-4">
                 Three Services.{" "}
-                <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                   One Agency.
                 </span>
               </h2>
-              <p className="text-xl text-zinc-500 max-w-2xl mx-auto">
+              <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
                 Everything you need to fill your pipeline and close more deals — without hiring.
               </p>
             </div>
@@ -183,7 +180,7 @@ export default function HomePage() {
               {services.map((service) => (
                 <div
                   key={service.href}
-                  className="relative group bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-zinc-600 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/20 flex flex-col"
+                  className="relative group bg-white border border-slate-100 rounded-2xl p-8 hover:border-blue-200 hover:shadow-xl transition-all duration-300 shadow-lg flex flex-col"
                 >
                   {service.badge && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs font-semibold px-4 py-1 rounded-full whitespace-nowrap">
@@ -193,11 +190,11 @@ export default function HomePage() {
                   <div className={`w-12 h-12 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
                     <service.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed mb-6">{service.desc}</p>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6">{service.desc}</p>
                   <ul className="space-y-2 mb-8 flex-1">
                     {service.features.map((f) => (
-                      <li key={f} className="flex items-center gap-2 text-sm text-zinc-400">
+                      <li key={f} className="flex items-center gap-2 text-sm text-slate-600">
                         <CheckCircle className="h-4 w-4 text-green-500 shrink-0" />
                         {f}
                       </li>
@@ -205,7 +202,7 @@ export default function HomePage() {
                   </ul>
                   <Link
                     href={service.href}
-                    className="flex items-center gap-2 text-sm font-semibold text-purple-400 hover:text-purple-300 transition-colors mt-auto"
+                    className="flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-purple-600 transition-colors mt-auto"
                   >
                     Learn more <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -216,7 +213,7 @@ export default function HomePage() {
         </section>
 
         {/* Stats */}
-        <section className="py-24 px-4 bg-gradient-to-br from-zinc-900 to-zinc-950 border-y border-zinc-800/50">
+        <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 py-12 md:py-16 px-6 md:px-12 rounded-2xl md:rounded-3xl text-white shadow-2xl">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat) => (
@@ -224,8 +221,8 @@ export default function HomePage() {
                   <div className={`w-14 h-14 bg-gradient-to-r ${stat.color} rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg`}>
                     <stat.icon className="h-7 w-7 text-white" />
                   </div>
-                  <div className="text-4xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-sm text-zinc-500">{stat.label}</div>
+                  <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</div>
+                  <div className="text-sm text-slate-300">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -233,13 +230,13 @@ export default function HomePage() {
         </section>
 
         {/* Process */}
-        <section className="py-24 px-4">
+        <section className="px-4 md:px-8">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <span className="text-sm font-semibold text-purple-400 uppercase tracking-widest">How It Works</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-3">
+            <div className="text-center mb-10 md:mb-14">
+              <span className="text-sm font-semibold text-purple-600 uppercase tracking-widest">How It Works</span>
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mt-3">
                 Up and running{" "}
-                <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                   in 7-10 days
                 </span>
               </h2>
@@ -248,12 +245,12 @@ export default function HomePage() {
               {steps.map((step, i) => (
                 <div key={step.step} className="relative">
                   {i < 2 && (
-                    <div className="hidden md:block absolute top-8 left-[calc(100%+0.75rem)] w-6 h-px bg-zinc-700 z-0" />
+                    <div className="hidden md:block absolute top-8 left-[calc(100%+0.75rem)] w-6 h-px bg-slate-300 z-0" />
                   )}
-                  <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
-                    <div className="text-6xl font-black text-zinc-800 mb-4 leading-none">{step.step}</div>
-                    <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                    <p className="text-zinc-400 text-sm leading-relaxed">{step.desc}</p>
+                  <div className="bg-white border border-slate-100 rounded-2xl p-8 shadow-lg">
+                    <div className="text-6xl font-black text-slate-100 mb-4 leading-none">{step.step}</div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
               ))}
@@ -262,28 +259,28 @@ export default function HomePage() {
         </section>
 
         {/* Testimonials */}
-        <section className="py-24 px-4 bg-zinc-900/50 border-y border-zinc-800/50">
+        <section className="bg-white px-6 md:px-12 py-12 md:py-16 rounded-2xl md:rounded-3xl shadow-lg border border-slate-100">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <span className="text-sm font-semibold text-purple-400 uppercase tracking-widest">Client Results</span>
-              <h2 className="text-4xl font-bold mt-3">Agencies Love Working With Us</h2>
+            <div className="text-center mb-10 md:mb-14">
+              <span className="text-sm font-semibold text-purple-600 uppercase tracking-widest">Client Results</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-3">Agencies Love Working With Us</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {testimonials.map((t) => (
-                <div key={t.name} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+                <div key={t.name} className="bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 rounded-2xl p-8">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-zinc-300 italic leading-relaxed mb-6">"{t.quote}"</p>
+                  <p className="text-slate-700 italic leading-relaxed mb-6">"{t.quote}"</p>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
                       <Users className="h-5 w-5 text-white" />
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-white">{t.name}</div>
-                      <div className="text-xs text-zinc-500">{t.title}</div>
+                      <div className="text-sm font-semibold text-slate-900">{t.name}</div>
+                      <div className="text-xs text-slate-500">{t.title}</div>
                     </div>
                   </div>
                 </div>
@@ -293,28 +290,27 @@ export default function HomePage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-24 px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="bg-gradient-to-br from-blue-600/15 to-purple-600/15 border border-zinc-700 rounded-3xl p-12">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to automate your growth?</h2>
-              <p className="text-xl text-zinc-400 mb-8">
-                Book a free 30-minute strategy call. We'll show you exactly what we'd build for your agency.
-              </p>
-              <Link
-                href="https://cal.com/elvis-cueva/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-10 py-5 rounded-xl transition-all duration-200 shadow-2xl shadow-purple-500/30 text-lg"
-              >
-                <Calendar className="h-5 w-5" />
-                Book Your Free Strategy Call
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-              <p className="text-sm text-zinc-600 mt-4">No commitment. No pressure. Just a real conversation.</p>
-            </div>
+        <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 py-16 md:py-20 px-6 md:px-12 rounded-2xl md:rounded-3xl text-white shadow-2xl">
+          <div className="max-w-3xl mx-auto text-center space-y-6 md:space-y-8">
+            <h2 className="text-3xl md:text-5xl font-bold">Ready to automate your growth?</h2>
+            <p className="text-lg md:text-xl text-slate-300">
+              Book a free 30-minute strategy call. We'll show you exactly what we'd build for your agency.
+            </p>
+            <Link
+              href="https://cal.com/elvis-cueva/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-white text-slate-900 hover:bg-slate-100 font-semibold px-10 py-5 rounded-xl transition-all duration-200 shadow-2xl text-lg"
+            >
+              <Calendar className="h-5 w-5" />
+              Book Your Free Strategy Call
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+            <p className="text-sm text-slate-400">No commitment. No pressure. Just a real conversation.</p>
           </div>
         </section>
-      </main>
+
+      </div>
       <SiteFooter />
     </div>
   )
