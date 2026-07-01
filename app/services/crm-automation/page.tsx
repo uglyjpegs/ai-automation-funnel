@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { ArrowRight, Calendar, CheckCircle, Zap, GitMerge, Settings, Bell, Star, Users, Play } from "lucide-react"
+import { ArrowRight, CheckCircle, Zap, GitMerge, Settings, Bell, Star, Users, Play } from "lucide-react"
 
 export const metadata = {
   title: "CRM & Workflow Automation for Agencies",
