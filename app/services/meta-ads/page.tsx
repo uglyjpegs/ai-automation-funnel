@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { ArrowRight, Calendar, CheckCircle, Target, TrendingUp, BarChart2, Layers, Star, Users, Play } from "lucide-react"
+import { ArrowRight, CheckCircle, Target, TrendingUp, BarChart2, Layers, Star, Users, Play } from "lucide-react"
 
 export const metadata = {
   title: "DFY Meta Ads for Agencies",

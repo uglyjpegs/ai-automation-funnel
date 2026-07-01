@@ -11,7 +11,7 @@ import {
   TrendingUp,
   DollarSign,
   CheckCircle,
-  Calendar,
+
   Star,
   Play,
   MessageSquare,
